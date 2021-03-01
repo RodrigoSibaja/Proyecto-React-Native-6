@@ -14,7 +14,7 @@ Tema oscuro resaltado con colores vivos.
 ## Funcionalidades
 * Buscar por nombre de jugador o "gamertag" de algún juego en especifico para mostrar información esencial de este mismo. La información desplegada varía dependiendo el juego. 
 * Crear una publicación para un juego en especifico en la que buscas a una persona o grupo de jugadores que cumplan con ciertos requisitos que van desde el nivel de un jugador hasta la región donde se encuentra y su idioma. Esto con la finalidad de filtrar a jugadores que no cumplan con ciertos requerimientos que alguien puede llegar a ocupar durante un juego en linea. 
-* Ligar tu cuenta con la cuenta de tu juego. 
+* Ligar tu cuenta de PlayGang con la cuenta de tu juego. 
 
 ### Elementos a utilizar
 * Button

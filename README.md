@@ -1,4 +1,5 @@
 # PlayGang
+![image](https://raw.githubusercontent.com/RodrigoSibaja/Proyecto-React-Native-6/main/playGang.png)
 ##### Integrantes:
 1. *Ana Paola Minchaca García*
 2. *Rodrigo Sibaja Villarreal*

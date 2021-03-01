@@ -1,4 +1,4 @@
-# Proyecto-React-Native-6 (Cambiar a nombre)
+# PlayGang
 ##### Integrantes:
 1. *Ana Paola Minchaca García*
 2. *Rodrigo Sibaja Villarreal*

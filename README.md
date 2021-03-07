@@ -27,3 +27,36 @@ Tema oscuro resaltado con colores vivos.
 * Keyboard
 * Share
 * PressEvent
+
+## Roadmap
+### Diseño
+- [ ] Diseño de pantallas
+- [ ] Imagenes
+### Recolección de datos
+- [ ] Web Scraping de datos
+### Manejo de cuentas
+- [ ] Base de datos de usuarios
+- [ ] Configuración de cuentas
+### Frontend
+- [ ] Implementación de pantallas
+- [ ] Navegación entre pantallas
+- [ ] Estructura de la app
+### Backend
+- [ ] Busqueda de perfiles
+- [ ] Creación de grupos
+- [ ] Manejo de datos
+### Pruebas
+- [ ] Funcionalidad
+- [ ] Manejo de errores
+- [ ] Pruebas unitarias
+- [ ] Pruebas de integración
+- [ ] Pruebas de regresión
+### Hosteo
+- [ ] Servicio de distribución y almacenamiento de la app y sus datos
+
+## Responsabilidades
+* Lorenzo Jácome - Web Scraping y la obtención de datos externos a la aplicación
+* Ana Paola Minchaca - Diseño de pantallas
+* Vicente Santamaria Velasco - Manejo y registro de cuentas de neustros usuarios
+* Rodrigo Sibaja Villarreal - Pruebas y manejo de errores
+* Eduardo Harari - Implementación y navaegación entre pantallas

@@ -9,6 +9,7 @@ import Blog from "./screens/Blog";
 import BlogDetails from "./screens/BlogDetails";
 import Grupos from "./screens/Grupos";
 import Login from "./screens/Login";
+import Search from "./screens/Search";
 
 const Stack = createStackNavigator();
 ////
@@ -55,6 +56,7 @@ function MyStack() {
       <Stack.Screen name="BlogDetails" component={BlogDetails} options={{ title: "Blog Detail" }}/>
       <Stack.Screen name="Grupos" component={Grupos} options={{ title: "Grupos" }} />
       <Stack.Screen name="Login" component={Login} options={{ title: "Login" }} />
+      <Stack.Screen name="Search" component={Search} options={{ title: "Search" }} />
 
     </Stack.Navigator>
   );

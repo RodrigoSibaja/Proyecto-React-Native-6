@@ -5,11 +5,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import Home from "./screens/Home";
-import Blog from "./screens/Blog";
-import BlogDetails from "./screens/BlogDetails";
 import Grupos from "./screens/Grupos";
 import Login from "./screens/Login";
 import Signup from "./components/signup";
+import Search from "./screens/Search";
+import Profile from "./screens/Profile";
 
 const Stack = createStackNavigator();
 ////
@@ -36,10 +36,11 @@ const port = process.env.PORT || 7000;
 app.listen(port, () => console.log(`Server running on port ${port}`));
 */
 ////
+
 function MyStack() {
   return (
     <Stack.Navigator
-      initialRouteName="Home"
+      initialRouteName="Login"
       screenOptions={{
         headerTitleAlign: "center",
         headerStyle: {
@@ -52,11 +53,11 @@ function MyStack() {
       }}
     >
       <Stack.Screen name="Home" component={Home} options={{ title: "Home" }} />
-      <Stack.Screen name="Blog" component={Blog} options={{ title: "Blog" }} />
       <Stack.Screen name="Signup" component={Signup} options={{ title: "Signup" }} />
-      <Stack.Screen name="BlogDetails" component={BlogDetails} options={{ title: "Blog Detail" }}/>
       <Stack.Screen name="Grupos" component={Grupos} options={{ title: "Grupos" }} />
       <Stack.Screen name="Login" component={Login} options={{ title: "Login" }} />
+      <Stack.Screen name="Search" component={Search} options={{ title: "Search" }} />
+      <Stack.Screen name="Profile" component={Profile} options={{ title: "Profile" }} />
 
     </Stack.Navigator>
   );

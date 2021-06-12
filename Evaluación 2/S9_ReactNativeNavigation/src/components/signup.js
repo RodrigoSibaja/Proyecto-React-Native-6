@@ -11,7 +11,7 @@ import {
   ActivityIndicator,
   Image
 } from "react-native";
-import firebase from "../database/firebase";
+import firebase from "../../database/firebase";
 
 export default class Signup extends Component {
   constructor() {

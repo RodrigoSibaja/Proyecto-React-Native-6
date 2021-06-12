@@ -1,6 +1,6 @@
 import React, { useState, Component } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, FlatList, ScrollView } from 'react-native';
-import {Greetings} from '../Greetings';
+import {Greetings} from '../../Greetings';
 
 export default function App() {
   // Text Inputs Variables.

@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, Image, TextInput, Button, Alert, ActivityIndica
 
 import LogInHeader from "../components/logInHeader";
 
-import firebase from "../database/firebase";
+import firebase from "../../database/firebase";
 
 export default class LogInFields extends Component {
   constructor() {

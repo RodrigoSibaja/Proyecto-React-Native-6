@@ -57,6 +57,6 @@ Tema oscuro resaltado con colores vivos.
 ## Responsabilidades
 * Lorenzo Jácome - Web Scraping y la obtención de datos externos a la aplicación
 * Ana Paola Minchaca - Diseño de pantallas
-* Vicente Santamaria Velasco - Manejo y registro de cuentas de neustros usuarios
+* Vicente Santamaria Velasco - Manejo y registro de cuentas de nuestros usuarios
 * Rodrigo Sibaja Villarreal - Pruebas y manejo de errores
 * Eduardo Harari - Implementación y navaegación entre pantallas

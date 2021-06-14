@@ -1,10 +1,11 @@
-import React, { useState, Component } from 'react';
-import { StyleSheet, Text, View, TextInput, Button, FlatList, ScrollView } from 'react-native';
+/* Creación de grupos */
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, TextInput, Button, FlatList, ScrollView, KeyboardAvoidingView} from 'react-native';
 import {Greetings} from '../../Greetings';
 
 export default function App() {
   // Text Inputs Variables.
-  const [value, onChangeText] = useState('Escribe el nombre de tu grupo');
+  const [value, onChangeText] = useState('');
   const [list, onChangeList] = useState([]);
   
   // Add Button.
@@ -22,7 +23,9 @@ export default function App() {
 
   return (
     <>
+    <KeyboardAvoidingView style={{flex: 1}} behavior="padding">
       <Greetings someText={list.length}/>
+      <ScrollView>
       <View style={stylesList.container}>
         <ListPerson />
       </View>
@@ -30,6 +33,7 @@ export default function App() {
         <TextInput
           style={stylesTextInput.textInput}
           onChangeText={text => onChangeText(text)}
+          placeholder = "Write the name of your group"
           value={value}
         />
       </View>
@@ -47,6 +51,8 @@ export default function App() {
           onPress={deleteButton}
         />
       </View> 
+      </ScrollView>
+      </KeyboardAvoidingView>
     </>
   );
 }

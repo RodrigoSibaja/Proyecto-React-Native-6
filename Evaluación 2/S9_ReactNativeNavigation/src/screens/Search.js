@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
+/* Búsqueda de jugadores */
 import React, {Component, useState} from 'react';
-
 import { StyleSheet, Text, View, TextInput, Button, Image } from 'react-native';
 import axios from 'axios';
 
@@ -15,6 +14,8 @@ export default function App() {
   const [image, setImage] = useState('');
   const [legend, setLegend] = useState('');
 
+
+  /* Recuperacion de datos con la API */
   const getProfileData = async(usuario) =>{
     let response = await axios.get(
       `https://public-api.tracker.gg/v2/apex/standard/profile/xbl/${usuario}`,
@@ -38,31 +39,22 @@ export default function App() {
     setPerfil(val);
   }
 
-  function wait(ms){
-    var start = new Date().getTime();
-    var end = start;
-    while(end < start + ms) {
-      end = new Date().getTime();
-   }
- }
-
- 
-
     return (
       <View style={styles.container}>
         <View>
         <TextInput
           style={stylesTextInput.textInput}
           onChangeText={profileHandler}
+          placeholder = "Search a gamertag"
         />
       </View>
         <View style = {{flexDirection: 'row'}}>
         <View>
-          <Text> ID: {id} </Text>
-          <Text> Level: {level} </Text>
-          <Text> Legend: {legend} </Text>
-          <Text> Kills: {kills} </Text>
-          <Text> Rank: {rank} </Text>
+          <Text style = {styles.textData}> ID: {id} </Text>
+          <Text style = {styles.textData}> Level: {level} </Text>
+          <Text style = {styles.textData}> Legend: {legend} </Text>
+          <Text style = {styles.textData}> Kills: {kills} </Text>
+          <Text style = {styles.textData}> Rank: {rank} </Text>
         </View>
         <Image 
             style = {imagenStyle.border, {height: 400, width: 200, resizeMode: 'cover'}}
@@ -84,13 +76,13 @@ export default function App() {
 
 }
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "space-between",
     padding: 20,
-    margin: 10,
+
+    backgroundColor: "#068592"
   },
   top: {
     flex: 0.3,
@@ -100,6 +92,10 @@ const styles = StyleSheet.create({
   },
   bottom: {
     flex: 0.2,
+  },
+  textData: {
+    fontSize: 18,
+    color: "#fff"
   },
 });
 
@@ -122,5 +118,6 @@ const stylesTextInput = StyleSheet.create({
     textAlign: 'center', 
     borderColor: '#156cdb', 
     borderWidth: 2,
+    color: 'white'
   }
 });

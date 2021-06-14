@@ -1,3 +1,5 @@
+/* Contiene las funciones para hacer el login dentro de la aplicación junto con los controles de la pantalla de inicio de sesión */
+
 import React, { Component } from "react";
 import { 
     StyleSheet, 
@@ -8,8 +10,6 @@ import {
     Alert,
     ActivityIndicator
 } from 'react-native';
-
-//simport firebase from "../database/firebase";
 
 export default class LogInFields extends Component{
     constructor() {

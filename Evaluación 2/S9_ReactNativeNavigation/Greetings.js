@@ -1,3 +1,5 @@
+/* Header para pantalla de creación de grupos */
+
 import React, {useState} from 'react';
 import { StyleSheet, Text, View} from 'react-native';
 
@@ -7,13 +9,13 @@ export const Greetings = (props) => {
  
     return(
       <View style={styles.container}>  
-        <Text style={styleText}>Creación de Grupos {AddingText(props.someText)}</Text>
+        <Text style={styleText}>Create a Group {AddingText(props.someText)}</Text>
       </View>
     );
 }
 
 function AddingText(someText){
-    return ' \nGrupos activos: ' + someText;
+    return ' \nActive groups: ' + someText;
   }
   
 const styles = StyleSheet.create({

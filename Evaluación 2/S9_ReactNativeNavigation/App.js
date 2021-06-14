@@ -1,4 +1,4 @@
-// App.js
+/* Creación del stack para navegación */
 
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
@@ -16,11 +16,11 @@ const Stack = createStackNavigator();
 function MyStack() {
   return (
     <Stack.Navigator
-      initialRouteName="Search"
+      initialRouteName="Signup"
       screenOptions={{
         headerTitleAlign: "center",
         headerStyle: {
-          backgroundColor: "#3740FE",
+          backgroundColor: "#2e2a5d",
         },
         headerTintColor: "#fff",
         headerTitleStyle: {
@@ -30,7 +30,7 @@ function MyStack() {
     >
       <Stack.Screen name="Home" component={Home} options={{ title: "Home" }} />
       <Stack.Screen name="Signup" component={Signup} options={{ title: "Signup" }} />
-      <Stack.Screen name="Grupos" component={Grupos} options={{ title: "Grupos" }} />
+      <Stack.Screen name="Grupos" component={Grupos} options={{ title: "Groups" }} />
       <Stack.Screen name="Login" component={Login} options={{ title: "Login" }} />
       <Stack.Screen name="Search" component={Search} options={{ title: "Search" }} />
       <Stack.Screen name="Profile" component={Profile} options={{ title: "Profile" }} />

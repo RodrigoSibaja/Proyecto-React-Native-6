@@ -1,4 +1,4 @@
-// components/signup.js
+/* Pantalla para registro de usuarios en Firebase */
 
 import React, { Component } from "react";
 import {
@@ -31,7 +31,7 @@ export default class Signup extends Component {
   };
 
   registerUser = () => {
-    if (this.state.email === "" && this.state.password === "") {
+    if (this.state.email.trim === "" && this.state.password === "") {
       Alert.alert("Enter details to signin!");
     } 
     else 
@@ -84,7 +84,7 @@ export default class Signup extends Component {
 
         <TextInput
           style={styles.inputStyle}
-          placeholder="Name"
+          placeholder="Gamertag"
           value={this.state.displayName}
           onChangeText={(val) => this.updateInputVal(val, "displayName")}
         />

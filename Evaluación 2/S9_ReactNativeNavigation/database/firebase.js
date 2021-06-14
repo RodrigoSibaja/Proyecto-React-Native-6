@@ -1,5 +1,4 @@
-// database/firebaseDb.js
-//import firebase from 'firebase/app';
+/* Conexión con base de datos de Firebase */
 
 import * as firebase from 'firebase';
 

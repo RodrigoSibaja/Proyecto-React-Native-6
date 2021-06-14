@@ -1,3 +1,5 @@
+/* Pantalla para acceso de usuarios registrados en Firebase */
+
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Component } from 'react';
@@ -6,6 +8,8 @@ import { StyleSheet, Text, View, Image, TextInput, Button, Alert, ActivityIndica
 import LogInHeader from "../components/logInHeader";
 
 import firebase from "../../database/firebase";
+
+var gamertag
 
 export default class LogInFields extends Component {
   constructor() {
@@ -32,7 +36,8 @@ export default class LogInFields extends Component {
         .auth()
         .signInWithEmailAndPassword(this.state.email, this.state.password)
         .then((res) => {
-          console.log(res);
+          gamertag = res.user.displayName;
+          module.exports = {gamertag};
 
           Alert.alert(`Welcome ${this.state.email}!`);
           this.setState({
@@ -71,7 +76,7 @@ export default class LogInFields extends Component {
 
             <TextInput 
               style = {styles.inputField}
-              placeholder="Username"
+              placeholder="Email"
               value={this.state.email}
               onChangeText={(val) => this.updateInputVal(val, "email")}
             />
